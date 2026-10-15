@@ -68,16 +68,20 @@ h1 span { color: var(--accent); }
   gap: 12px;
 }
 .hole {
-  aspect-ratio: 1;
+  width: 100%;
+  height: clamp(88px, 28vw, 124px);
+  display: block;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  padding: 0;
   transition: border-color 0.15s;
   -webkit-tap-highlight-color: transparent;
 }
+
 .critter {
   position: absolute;
   inset: 0;
